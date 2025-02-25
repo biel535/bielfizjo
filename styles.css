@@ -725,3 +725,25 @@ nav {
   }
 }
 
+.promo-banner {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem 0.8rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 3px solid var(--primary-color-dark);
+  
+}
+
+.promo-banner a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.promo-banner a:hover {
+  text-decoration: underline;
+}
