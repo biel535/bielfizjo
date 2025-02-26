@@ -76,3 +76,25 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
   spaceBetween: 20,
 });
+
+
+// Pobieranie elementów
+const modal = document.getElementById("modal");
+const closeModalBtn = document.querySelector(".close");
+
+// Modal otwiera się automatycznie przy odświeżeniu strony
+window.addEventListener("load", () => {
+    modal.style.display = "flex";
+});
+
+// Zamykanie modalu po kliknięciu w "X"
+closeModalBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+// Zamykanie modalu po kliknięciu poza jego obszar
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
