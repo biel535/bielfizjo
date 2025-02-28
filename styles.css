@@ -19,17 +19,20 @@
 .section__container {
   max-width: var(--max-width);
   margin: auto;
-  padding: 5rem 1rem;
+  padding: 4rem 1rem;
 }
 
 .section__header {
   position: relative;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--text-dark);
+  max-width: 90vw;
+  
 }
+
 
 .section__header::after {
   position: absolute;
@@ -90,6 +93,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  margin-bottom: 1rem;  
 }
 
 .btn2:hover {
@@ -190,7 +194,7 @@ nav {
 }
 
 .header__image img {
-  max-width: 500px;
+  max-width: 90vw;
   margin: auto;
 }
 
@@ -201,7 +205,7 @@ nav {
 }
 
 .header__content .section__header {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -315,6 +319,7 @@ nav {
   width: fit-content;
   margin-inline: auto;
   text-align: center;
+  
 }
 
 .trainer__container .section__header::after {
@@ -331,7 +336,14 @@ nav {
 .trainer__card {
   height: 100%;
   display: grid;
-  align-items: center;
+  align-items: center; 
+}
+
+.trainer__card1 {
+  height: 100%;
+  display: grid;
+  align-items: center; 
+  margin-top: 5rem;
 }
 
 .trainer__card img {
@@ -612,7 +624,7 @@ nav {
   }
 
   .trainer__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
   }
 
@@ -620,6 +632,7 @@ nav {
     grid-area: 2/2/3/3;
   }
 
+  
   .price__grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem 1rem;

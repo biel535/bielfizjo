@@ -61,8 +61,8 @@ ScrollReveal().reveal(".about__content .section__description", {
 
 ScrollReveal().reveal(".about__card", {
   ...scrollRevealOption,
-  delay: 1500,
-  interval: 500,
+  delay: 1000,
+  interval: 300,
 });
 
 // price container
